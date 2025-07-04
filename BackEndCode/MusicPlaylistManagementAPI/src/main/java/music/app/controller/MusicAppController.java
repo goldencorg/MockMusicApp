@@ -102,7 +102,7 @@ public class MusicAppController {
 						"Playlist with ID=" + playlistDto.getPlaylistId() + " does not exist.")) :new Playlist();
 		playlist.setPlaylistTitle(playlistDto.getPlaylistTitle());
 		playlist.setImageUrl(playlistDto.getImageUrl() 
-				!= null || playlistDto.getImageUrl().isBlank() ? playlistDto.getImageUrl()
+				!= null && playlistDto.getImageUrl().isBlank() ? playlistDto.getImageUrl()
 				:"https://tinyurl.com/defaultplaylistimage");
 		playlist.setUser(user);
 		for(SongDto songDto : playlistDto.getSongs()) {
@@ -128,7 +128,7 @@ public class MusicAppController {
 		Playlist existingPlaylist = verifyUserPlaylist(userId, playlistId);
 		existingPlaylist.setPlaylistTitle(playlistDto.getPlaylistTitle());
 		existingPlaylist.setImageUrl(playlistDto.getImageUrl() 
-				!= null || playlistDto.getImageUrl().isBlank() ? playlistDto.getImageUrl()
+				!= null && playlistDto.getImageUrl().isBlank() ? playlistDto.getImageUrl()
 				:"https://tinyurl.com/defaultplaylistimage");
 		Playlist updatedPlaylist = musicAppService.savePlaylist(existingPlaylist);
 		log.info("Updating playlist with ID=" + playlistId + " of user with ID=" + userId + ".");
