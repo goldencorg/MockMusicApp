@@ -1,0 +1,11 @@
+.hover {
+    :hover {
+        background-color: rgb(228, 226, 226);
+    }
+}
+.gradient {
+    background-image: linear-gradient(rgb(227, 157, 157), rgb(45, 66, 82))
+}
+.active {
+    font-weight: bold;
+}

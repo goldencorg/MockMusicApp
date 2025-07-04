@@ -1,0 +1,11 @@
+spring:
+   datasource:
+      username: music_app
+      password: music_app
+      url: jdbc:mysql://localhost:3306/music_app
+
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true
+
