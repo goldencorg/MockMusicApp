@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/app/:path*",
-      "destination": "https://https://mockmusicapp-production.up.railway.app/app/:path*"
+      "destination": "https://mockmusicapp-production.up.railway.app/app/:path*"
     }
   ]
 }
