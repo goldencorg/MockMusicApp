@@ -29,7 +29,6 @@ public class Song {
 	private String songArtist;
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
-	@JsonIgnore
 	@ManyToMany(mappedBy = "songs", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	private Set<Playlist> playlists = new HashSet<>();
 

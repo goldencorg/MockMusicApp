@@ -30,7 +30,6 @@ public class Playlist {
 	private String imageUrl;
 	@ManyToOne
 	@JoinColumn(name = "user_id")
-	@JsonIgnore
 	private User user;
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
