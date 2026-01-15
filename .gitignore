@@ -1,0 +1,8 @@
+#BackEndCode (Currently Not Needed)
+BackEndCode/
+
+# macOS System Files (Junk)
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
