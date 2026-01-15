@@ -28,7 +28,7 @@ Follow these steps to run the project locally.
 
 ```bash
 git clone https://github.com/goldencorg/MockMusicApp.git
-cd mock-music-app
+cd MockMusicApp/FrontEndClient/music-playlist
 
 ```
 
